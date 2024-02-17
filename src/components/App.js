@@ -15,13 +15,11 @@ function App() {
   return (
     <div className="app">
       <div>
-        <h2>Туду лист:</h2>
+        <h2>Туду :</h2>
       </div>
-      {loading ? 
-        'Loading...'
-       : (
-        todos.map((item) => <div key={item.id}>{item.title}</div>)
-      )}
+      {loading
+        ? "Loading..."
+        : todos.map((item) => <div key={item.id}>{item.title}</div>)}
     </div>
   );
 }
