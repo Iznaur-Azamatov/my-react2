@@ -55,6 +55,16 @@ code {
   display: grid;
   row-gap: 10px;
 }
-.app p{
+.app p {
   color: white;
+}
+.load h2 {
+  color: white;
+  font-size: x-large;
+}
+.load {
+  margin: 0 auto;
+  width: 110px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
