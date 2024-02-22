@@ -1,20 +1,60 @@
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(255, 255, 255, 0.878);
+  background-color: rgba(0, 0, 0, 0.945);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.container{
-  padding: 24px 0px ;
-  width: 1100px;
+.container {
+  border: 1px solid white;
+  width: 900px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.todo-style__title {
+  width: 400px;
+  background-color: #ffff;
+  border: 2px solid #363636d5;
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.todo-style__title p {
+  color: rgb(0, 0, 0);
+
+  display: inline;
+}
+.todo-style {
+  display: grid;
+  row-gap: 10px;
+}
+.todo-subtitle {
+  color: white;
+  text-align: center;
+  margin: 200px 0px 100px;
+}
+.btn-delete {
+  height: 25px;
+  background-color: black;
+  color: #fff;
+  width: 25px;
+  border: 1px sollid gray;
+  border-radius: 5px;
+}
+.button-input {
+  display: grid;
+  row-gap: 10px;
+}
+.app p{
+  color: white;
 }

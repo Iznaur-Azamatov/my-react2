@@ -1,15 +1,12 @@
 export const LoadTodos = () => {
   return (dispatch) => {
-    dispatch({ type: "todos/start" });
-
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
-      .then((todos) => {
+      .then((json) => {
         dispatch({
-          type: "todos/item",
-          payload: todos,
+          type: "load",
+          payload: json,
         });
-      })
-      
+      });
   };
 };
